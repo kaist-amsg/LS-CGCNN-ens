@@ -31,9 +31,9 @@ def main():
 	ncv = 5
 
 	# CO BE Model best hyperparameters
-	#data_path='./data/COdata.pickle'
+	#data_path='./data/COdata.json'
 	#split_path = './data/COSplits.json'
-	data_path='./data/Hdata.pickle'
+	data_path='./data/Hdata.json'
 	split_path = './data/HSplits.json'
     
 	# Best Hyperparameters

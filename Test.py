@@ -34,7 +34,7 @@ def main():
 	ncv = 5
 	# CO BE Model best hyperparameters
 	param_path = './COparams/'
-	data_path='./data/COdata.pickle'
+	data_path='./data/COdata.json'
 	split_path = './data/COSplits.json'
 	atom_fea_len = 181
 	h_fea_len = 362
@@ -44,7 +44,7 @@ def main():
 	'''
     # H BE Model best hyperparameters
 	param_path = './Hparams/'
-	data_path='./data/Hdata.pickle'
+	data_path='./data/Hdata.json'
 	split_path = './data/HSplits.json'
 	atom_fea_len = 200
 	h_fea_len = 400

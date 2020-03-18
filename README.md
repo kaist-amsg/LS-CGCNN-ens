@@ -37,4 +37,4 @@ Geun Ho Gu, Juhwan Noh, Sungwon Kim, Seoin Back, Zachary Ulissi, Yousung Jung. "
 
 Additional Info
 ===============
-This code base is a lightweight package that includes training (Train.py), test (Test.py), and usage (Use.py) code. Currently, the database used to train is not included. Please contact the Ulissi group to obtain the latest database. The example of data set format is in /example/ folder.
+This code base is a lightweight package that includes training (Train.py), test (Test.py), and usage (Use.py) code. Currently, the database used to train is not included. Please contact the Ulissi group to obtain the latest database. The example of data set format is in /example/ folder. You may notice that the intial batch is slow (for training, testing, using). This is due to the cost of finding neighbors in the first run. For multiple runs using the same data set, I would recommend pre-determining these neighbors to speed up the training. 

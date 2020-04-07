@@ -16,7 +16,7 @@ from torch.autograd import Variable
 from torch.optim.lr_scheduler import ExponentialLR
 
 from cgcnn.cgcnn_bn_global_attn import CrystalGraphConvNet
-from cgcnn.data import collate_pool, get_train_val_test_loader, JSONData
+from cgcnn.data import collate_pool, get_train_val_test_loader, JSONData, PickleData
 
 def split_loader(split_path,idx):
 	with open(split_path) as f:
@@ -31,10 +31,10 @@ def main():
 	ncv = 5
 
 	# CO BE Model best hyperparameters
-	#data_path='./data/COdata.json'
-	#split_path = './data/COSplits.json'
-	data_path='./data/Hdata.json'
-	split_path = './data/HSplits.json'
+	data_path='./data/COdata.pickle'
+	split_path = './data/COSplits.json'
+	#data_path='./data/Hdata.json'
+	#split_path = './data/HSplits.json'
     
 	# Best Hyperparameters
 	atom_fea_len = 181
@@ -65,7 +65,7 @@ def main():
 	epochs = 200
 
 	#setup
-	dataset = JSONData(data_path,atom_init_path, max_num_nbr,radius,dmin,step,random_seed)
+	dataset = PickleData(data_path,atom_init_path, max_num_nbr,radius,dmin,step,random_seed)
 	collate_fn = collate_pool
 
 	for cv_idx in range(1,ncv+1):

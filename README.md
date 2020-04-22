@@ -1,6 +1,6 @@
 Labeled Site CGCNN with ensemble (LS-CGCNN-ens)
 ===========================================
-The LS-CGCNN-ens is a python code for comprehensive deep learning of binding energy predictions developed by Jung group at KAIST, and Ulissi group at Carnegie Mellon University. The model leverages the concept of binding site, where the element of binding site atoms are given a pseudo-element. Please submit issues to this github page for any mistakes, or improvements. 
+The LS-CGCNN-ens is a python code for comprehensive deep learning of binding energy predictions developed by Jung group at KAIST, and Ulissi group at Carnegie Mellon University. The model leverages the concept of binding site, where the element of binding site atoms are given a pseudo-element. Please submit issues to this github page for any mistakes, or improvements (Corresponding author contact: ysjn@kaist.ac.kr). 
 
 Developers
 ----------

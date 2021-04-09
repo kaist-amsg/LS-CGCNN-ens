@@ -4,7 +4,7 @@ The LS-CGCNN-ens is a python code for comprehensive deep learning of binding ene
 
 Developers
 ----------
-Geun Ho Gu (ghgu@kaist.ac.kr) <- Current maintainer
+Geun Ho Gu (ggu@udel.edu) <- Current maintainer
 
 Juhwan Noh (jhwan@kaist.ac.kr)
 
